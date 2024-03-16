@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.App {
+  align-items: center;
+}
+
+h3, h4, h5 {
+  text-shadow: white 0px 0px 4px;
+}
+
+.answerBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  left: 32px;
+}
+
+.answerBox #submitGuess {
+  margin-left: 10px;
+}
+
+.answerBox #guess {
+  height: 2em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+body {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/006/230/864/original/japanese-style-element-background-free-vector.jpg');
+  background-size: cover;
+}
+
+.card, .cardflipped {
+  border: 1px solid rgba(153, 153, 153, 0.497);
+  height: 3em;
+  width: 12em;
+  padding: 100px 200px;
+  box-shadow: 0px 0px 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card:hover, .cardflipped:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.front, .back {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.card .back {
+  display: none;
+}
+
+.cardflipped .front {
+  display: none;
+}
+
+.upgrade {
+  border: 1px solid rgba(153, 153, 153, 0.497);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 25px;
+  width: 200px;
+  line-height: 0.5;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#backCard {
+  position: relative;
+  right: 15px;
+}
+
+#nextCard {
+  position: relative;
+}
